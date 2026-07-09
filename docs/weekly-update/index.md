@@ -31,7 +31,7 @@ You'll hand both ends to Cowork. It reconstructs the prep from your own Microsof
 
 This flight uses two Cowork skills: **1:1 Prep** and **1:1 Recap**. Add them before you begin.
 
-1. **Download both skill files** using the buttons below. Each opens in a new tab so you can save it wherever you keep your downloads.
+1. **Download both skill packs** using the buttons below. Each is a small zip that already contains the skill's folder with `SKILL.md` inside - nothing to create or rename.
 
     <!-- markdownlint-disable MD033 -->
     <div class="skill-steps">
@@ -40,7 +40,7 @@ This flight uses two Cowork skills: **1:1 Prep** and **1:1 Recap**. Add them bef
         <div class="skill-step-body">
           <span class="skill-step-title">1:1 Prep skill</span>
           <p>Posts a pre-meeting brief to your Teams before each 1:1.</p>
-          <a class="skill-download" href="/Cowork-Manager-Workshop/one-on-one-prep-skill.txt" download="one-on-one-prep-SKILL.md" target="_blank" rel="noreferrer">⬇️ Download 1:1 Prep</a>
+          <a class="skill-download" href="/Cowork-Manager-Workshop/one-on-one-prep.zip" download="one-on-one-prep.zip" rel="noreferrer">⬇️ Download 1:1 Prep</a>
         </div>
       </div>
       <div class="skill-step">
@@ -48,7 +48,7 @@ This flight uses two Cowork skills: **1:1 Prep** and **1:1 Recap**. Add them bef
         <div class="skill-step-body">
           <span class="skill-step-title">1:1 Recap skill</span>
           <p>Drafts the post-meeting follow-up from the transcript for your approval.</p>
-          <a class="skill-download" href="/Cowork-Manager-Workshop/one-on-one-recap-skill.txt" download="one-on-one-recap-SKILL.md" target="_blank" rel="noreferrer">⬇️ Download 1:1 Recap</a>
+          <a class="skill-download" href="/Cowork-Manager-Workshop/one-on-one-recap.zip" download="one-on-one-recap.zip" rel="noreferrer">⬇️ Download 1:1 Recap</a>
         </div>
       </div>
     </div>
@@ -62,9 +62,7 @@ This flight uses two Cowork skills: **1:1 Prep** and **1:1 Recap**. Add them bef
 
     If a `skills` folder isn't already there, create one.
 
-1. **Create a folder for each skill** inside it - one named `one-on-one-prep` and one named `one-on-one-recap`.
-
-1. **Move each downloaded file into its matching folder and rename it to `SKILL.md`.** You should end up with `skills\one-on-one-prep\SKILL.md` and `skills\one-on-one-recap\SKILL.md`.
+1. **Extract each zip into that `skills` folder.** Each zip already contains a ready-made folder - `one-on-one-prep` and `one-on-one-recap` - with `SKILL.md` inside, so there's nothing to rename. You should end up with `skills\one-on-one-prep\SKILL.md` and `skills\one-on-one-recap\SKILL.md`.
 
 1. **Open or refresh Cowork.** Both skills are now ready to use by name.
 
