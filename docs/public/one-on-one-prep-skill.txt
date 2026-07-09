@@ -1,0 +1,107 @@
+---
+name: one-on-one-prep
+description: |
+  Generates a reusable pre-meeting prep brief for a manager's 1:1 with a named
+  direct report. Resolves the report, finds the next scheduled 1:1, scans what
+  that report raised via Teams DM and email to the manager since the last 1:1,
+  checks open action items, and produces a fixed-format brief with suggested
+  focus areas and where the manager can unblock or accelerate. Delivers the
+  brief as a Teams direct message to the manager.
+  Use when the user asks to "prep me for my 1:1 with <name>", "prepare for my
+  one-on-one with <name>", "get me ready for my 1:1 with <name>", "build my 1:1
+  prep for <name>", "what should I cover in my 1:1 with <name>", or sets up a
+  recurring pre-1:1 brief for a direct report.
+  Do NOT use for post-meeting summaries or follow-up recaps — use
+  one-on-one-recap instead. Do NOT use for team-wide catch-ups across many
+  people — use team-pulse instead. Do NOT use for multi-person meeting prep —
+  use meeting-intel instead.
+cowork:
+  category: productivity
+  icon: Notepad
+---
+
+## Overview
+Produces a focused, repeatable prep brief for a manager's recurring 1:1 with one
+direct report. It reads what the report has raised with the manager (Teams DMs +
+email) since the last 1:1, pulls forward open action items, and turns that into a
+short agenda the manager can act on — including concrete places to unblock or
+accelerate. The report's name is the only required input, so the same skill works
+for every member of a team.
+
+## When to Use
+- Preparing for the next scheduled 1:1 with a specific direct report
+- A recurring, hands-off brief delivered shortly before each 1:1
+- Refreshing on what a report has surfaced since you last met
+
+## When NOT to Use
+- Writing the follow-up **after** the meeting — use **one-on-one-recap**
+- A broad catch-up across your whole team — use **team-pulse**
+- Prepping for a multi-attendee meeting — use **meeting-intel**
+
+## Quick Start
+```
+User: "Prep me for my next 1:1 with Julia."
+1. Resolve the report (SearchPeople / GetUserDetails) → email + name
+2. Find the next 1:1 and the previous occurrence (ListCalendarView)
+3. Scan Teams DMs + email from the report since the last 1:1
+4. Pull open action items from the prior recap/messages
+5. Assemble the brief in the Output format
+6. Deliver as a Teams DM to the manager (PostMessage, recipients=['me'])
+```
+
+## Core Instructions
+
+### Step 1 — Resolve the report
+- Resolve the named report to an email with `SearchPeople`; confirm ambiguous or
+  alias names with `GetUserDetails`. Never guess an address.
+
+### Step 2 — Anchor the meeting window
+- Use `ListCalendarView` to find the **next** 1:1 with the report (match on
+  attendee + "1:1"/report name in subject) and the **previous** occurrence.
+- Set the scan window = end of the previous 1:1 → now. If no prior 1:1 exists,
+  default to the last **14 days**.
+
+### Step 3 — Gather what the report raised
+Run these in parallel over the scan window:
+- `ListChatMessages(person="<report>")` — their 1:1 Teams DM thread; also
+  `keyword` filter for asks/blockers if the thread is long.
+- `ListMessages(from_address="<report email>")` and/or
+  `SearchM365(sources=["email","teams"], from_user="<report>")` for topics they
+  sent the manager.
+- Capture: explicit asks, blockers, decisions they're waiting on, status updates,
+  and anything flagged "when we chat / for our 1:1". Keep source links.
+
+### Step 4 — Carry forward open items
+- Pull unresolved action items from the most recent recap or prior messages
+  (owner + due date). Note anything overdue.
+
+### Step 5 — Assemble & deliver
+- Fill the Output format. Keep it skimmable — a manager should read it in under a
+  minute. Deliver as a **Teams DM to the manager** with `PostMessage(recipients=['me'])`.
+  If the user asked for email instead, use `SendEmailWithAttachments` to the manager.
+
+## Output
+A Teams DM titled **"1:1 Prep — <Report> · <date/time>"**, ≤ ~250 words, with these
+sections (omit a section if there's nothing real to put in it — never pad):
+
+- **What <Report> raised** — bullets of topics they surfaced via Teams/email since
+  last time, each with a source link.
+- **Since last time** — status of prior action items; flag anything overdue.
+- **Suggested focus areas** — 2–4 things worth probing this meeting.
+- **Where you can help** — specific ways to unblock or accelerate (a decision to
+  make, an intro, air cover, a resource).
+- **Recognize a win** — one thing to acknowledge.
+- **Questions to ask** — 2–3 open questions.
+
+## Guardrails
+- **Ground everything in retrieved messages.** Every bullet must trace to a real
+  Teams/email item or calendar entry — never invent topics, asks, or quotes. If
+  the scan returns little, say "Quiet since your last 1:1" rather than padding.
+- **Read-only.** This skill only reads and then posts the brief to the manager;
+  it never messages the report or changes the calendar.
+- **Privacy.** The brief is for the manager only; keep it in the manager's own
+  Teams/inbox.
+- **No performance evaluation.** Summarize topics and status, not judgments of the
+  report's competence.
+- If the report can't be resolved or no 1:1 is found, say so and ask which person
+  or meeting to use.
