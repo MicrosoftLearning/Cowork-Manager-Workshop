@@ -1,130 +1,219 @@
 ---
-description: Have Copilot Cowork reconstruct your week into a leadership update and schedule it to run automatically.
-time: 10
+description: Have Cowork prep you before every 1:1 and draft the recap after - built once for one report, then scaled to your whole team.
+time: 20
 ---
 
-# 🛠️ Flight 02: Your Weekly Manager Update
+# 🤝 Flight 02: One-on-One Prep with Cowork
 
-**Cleared for takeoff.** On your last flight you got oriented. Now you'll put Cowork to work on something you redo all the time: the "here's what I got done" update for your manager 1:1.
+**Cleared for takeoff.** On your last flight you got oriented and handed Cowork a full team-meeting setup. Now you'll point it at something you redo every single week: your one-on-ones.
 
-You'll have Cowork reconstruct your week from your own Microsoft 365 activity, draft it in a clean structure, then put it on a schedule so it runs without you.
+You'll build a 1:1 that **preps you before** the meeting and **writes its own recap after** - set up once for a single direct report, then replicated across your whole team with one instruction.
 
 ## What You'll Produce {#what-youll-produce}
 
 By the end of this flight, Copilot Cowork will have:
 
-- ✅ Reconstructed your week from sent mail, completed tasks, meetings, and Teams threads
-- ✅ Drafted a manager update in a clear structure (Accomplished / Needs input / Looking ahead)
-- ✅ Grounded "Looking ahead" in your real upcoming calendar and open tasks
-- ✅ Scheduled a weekly run that delivers the update to your own inbox, never to anyone else without your approval
+- ✅ Set up a recurring, auto-transcribed 1:1 meeting
+- ✅ Posted a **prep brief** to your Teams 15 minutes before each meeting
+- ✅ Drafted a **recap** from the transcript that sends only after your approval
+- ✅ Replicated the whole setup across your team from a single prompt
 
 ## The Scenario {#the-scenario}
 
-Every week, or right before each 1:1, you stitch together what you actually accomplished: scrolling sent mail, checking off tasks, remembering which meetings mattered. It's useful for your manager but tedious to assemble.
+Good 1:1s take prep you rarely have time for: what did they raise last time, what's still open, what can you unblock? And afterward, a clear recap with owners and due dates often never gets written.
 
-Cowork can reconstruct it from your Microsoft 365 activity in one pass. Then you can put it on a schedule so a fresh draft lands in your inbox each week, ready for you to skim and forward.
+You'll hand both ends to Cowork. It reconstructs the prep from your own Microsoft 365 activity and posts it before the meeting, then turns the transcript into a follow-up you approve before it sends. You'll build it for one report first, then scale it to everyone.
 
-## Exercise 2.1 - Reconstruct Your Week {#exercise1-reconstruct-your-week}
+> [!TIP]
+> **The big idea:** Only two of the three pieces are skills - the meeting itself is just a calendar action. Build it once for one direct report, then tell Cowork to replicate it for the rest of your team.
 
-First, have Cowork rebuild what you accomplished. This is your baseline draft.
+## Before You Start - Add the Two Skills {#add-the-skills}
+
+This flight uses two Cowork skills: **1:1 Prep** and **1:1 Recap**. Add them before you begin.
+
+1. **Download both skill files** using the buttons below. Each opens in a new tab so you can save it wherever you keep your downloads.
+
+    <!-- markdownlint-disable MD033 -->
+    <div class="skill-steps">
+      <div class="skill-step">
+        <span class="skill-step-num">1</span>
+        <div class="skill-step-body">
+          <span class="skill-step-title">1:1 Prep skill</span>
+          <p>Posts a pre-meeting brief to your Teams before each 1:1.</p>
+          <a class="skill-download" href="/Cowork-Manager-Workshop/one-on-one-prep-skill.txt" download="one-on-one-prep-SKILL.md" target="_blank" rel="noreferrer">⬇️ Download 1:1 Prep</a>
+        </div>
+      </div>
+      <div class="skill-step">
+        <span class="skill-step-num">2</span>
+        <div class="skill-step-body">
+          <span class="skill-step-title">1:1 Recap skill</span>
+          <p>Drafts the post-meeting follow-up from the transcript for your approval.</p>
+          <a class="skill-download" href="/Cowork-Manager-Workshop/one-on-one-recap-skill.txt" download="one-on-one-recap-SKILL.md" target="_blank" rel="noreferrer">⬇️ Download 1:1 Recap</a>
+        </div>
+      </div>
+    </div>
+    <!-- markdownlint-enable MD033 -->
+
+1. **Open your Cowork skills folder** in File Explorer:
+
+    ```text
+    C:\Users\<YourAlias>\OneDrive - Microsoft\Documents\Cowork\skills
+    ```
+
+    If a `skills` folder isn't already there, create one.
+
+1. **Create a folder for each skill** inside it - one named `one-on-one-prep` and one named `one-on-one-recap`.
+
+1. **Move each downloaded file into its matching folder and rename it to `SKILL.md`.** You should end up with `skills\one-on-one-prep\SKILL.md` and `skills\one-on-one-recap\SKILL.md`.
+
+1. **Open or refresh Cowork.** Both skills are now ready to use by name.
+
+1. **Confirm it worked.** In Cowork, ask:
+
+    ```text
+    What skills do I have?
+    ```
+
+    You should see **1:1 Prep** and **1:1 Recap** listed, alongside any other skills you've added.
 
 > [!NOTE]
-> Cowork adapts to the context it has, so it won't behave identically for everyone. Depending on what it already knows - or what permissions are already set up - it may or may not open an action window or ask a clarifying question before it runs. If your experience doesn't match the steps exactly, that's expected, not a mistake.
+> **Not showing up?** Make sure each `SKILL.md` sits inside its own folder whose name matches the skill, let OneDrive finish syncing (green checkmark), then reopen Cowork.
+
+## The Outcome - What an Automated 1:1 Looks Like {#the-outcome}
+
+| Stage | What happens |
+| --- | --- |
+| **Before the 1:1** | A prep brief lands in your Teams 15 minutes before the meeting - what your report raised, open items, and where you can unblock or accelerate. |
+| **During** | The meeting records and transcribes automatically, so you can stay focused on the conversation. |
+| **After the 1:1** | A recap drafts itself from the transcript. You review, edit, and approve - then it goes to your report. Personal chat is left out. |
+
+## Exercise 2.1 - Set Up the Recurring 1:1 + Transcription {#exercise1-recurring-1-1}
+
+Start with one weekly Teams meeting that runs all year. Cowork creates the series and the Teams link; transcription is what powers the recap later.
+
+> [!NOTE]
+> Cowork adapts to the context it has, so it won't behave identically for everyone. Depending on what it already knows - or what permissions are set up - it may or may not open an action window or ask a clarifying question before it runs. If your experience doesn't match the steps exactly, that's expected, not a mistake.
 
 1. Open [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat/), select **Cowork**, and start a **New task**.
 
-    ![Copilot Cowork with the New task option selected](./assets/new-task.png)
-
-1. Give Cowork your work context. Select **+** → **Add work context** and point it at your recent activity: sent emails, completed tasks, meetings you led or attended, and an active Teams channel or two from the past week.
-
-    > [!TIP]
-    > If you're not sure what to reference, just describe the window in your prompt (for example, "the last 7 days") and let Cowork search. Adding a few specific threads or tasks sharpens the result.
-
-1. In the **Start a new task..** prompt field, copy & paste the following prompt:
+1. In the prompt field, paste the following, replacing the placeholders in `<angle brackets>`:
 
     ```text
-    Reconstruct what I accomplished at work over the past week and email me a concise leadership update I can use in my next 1:1 or manager check-in.
-    
-    Before writing the update, review my Microsoft 365 activity from the last 7 days, including:
-    
-    - Sent emails and threads I actively drove
-    - Teams chats and channel messages where I contributed meaningfully
-    - Meetings I led, presented in, or where I owned follow-up
-    - Files I created or edited, including Word, PowerPoint, Excel, Loop, and OneNote
-    
-    Focus on work that moved something forward. Ignore routine back-and-forth, FYI noise, status-only meetings, and recurring syncs unless they produced a decision, deliverable, or next step.
-    
-    Send me an email with the following structure:
-    
-    Accomplished - What shipped, progressed, or became clearer. Be specific. Tie each item to a real artifact, message, email thread, or meeting. Do not include anything you cannot point back to.
-    
-    Needs input - Open questions, blockers, decisions, or areas where I may want leadership input or help. If there is nothing substantive, write “n/a.”
-    
-    Looking ahead - Work threads continuing or starting next week. Infer these from this week’s activity and my upcoming calendar, but do not transcribe my calendar. Only name a specific meeting or session if it represents real work I’m driving. Skip routine or recurring syncs. Flag any upcoming OOO, handoffs, or timing risks you can infer.
-    
-    Keep the update tight enough to skim in under one minute.
-    
-    If a section is thin, tell me what context I should add rather than padding it. If you are unsure whether something belongs, flag it as uncertain instead of guessing
+    Set up a recurring 30-minute 1:1 with <insert direct report> every <day and time>,
+    starting the week of July 20, 2026, and ending June 30, 2027, as a Teams meeting.
     ```
 
-1. Send the prompt by hitting the white circle with the black arrow pointing up in the bottom-right corner.
+1. Send the prompt and let Cowork create the recurring series and the Teams link.
 
-1. Cowork should come back with a draft email ready to send. Review the draft.
+> [!IMPORTANT]
+> **One manual step - don't skip this.** In Teams, open the 1:1 series → **Meeting options** → turn on **Record and transcribe automatically** → **Save**. One toggle covers every occurrence - it's a one-time setting on the series, not per meeting. Without it, the recap in Exercise 2.3 has no transcript to work from.
 
-    ![Copilot Cowork showing a drafted email with Send and Cancel options](./assets/send-cancel.png)
+## Exercise 2.2 - The Prep Brief That Beats You to the Meeting {#exercise2-prep-brief}
 
-    For now, select **Cancel**. You'll schedule this same prompt in the next exercise.
+The **1:1 Prep** skill scans what your report raised via Teams and email since your last 1:1, carries open action items forward, suggests focus areas, flags a win to recognize, and posts a brief to your Teams **15 minutes before** the meeting.
+
+The brief that lands in **your** Teams includes:
+
+- What `<direct report>` raised since your last 1:1
+- Suggested focus areas
+- Where you can help unblock or accelerate
+- A win to recognize
+- Questions to ask
+
+1. **Run it once as a test.** In Cowork, paste:
+
+    ```text
+    Use my 1:1 Prep skill to prep for my next 1:1 with <direct report>.
+    ```
+
+1. Review the brief Cowork posts to your Teams.
 
     > [!NOTE]
-    > Choosing **Cancel** discards the draft, it isn't saved anywhere. If we asked Cowork to *draft* an email instead, it would save to your Outlook **Drafts** folder.
+    > On a fresh setup the brief may be short - it only reflects what your report has actually raised, and empty sections are left out by design. The brief posts as a Teams message to **you**, so check your own chat.
 
-## Exercise 2.2 - Put It on Autopilot {#exercise2-put-it-on-autopilot}
-
-Now automate it so you never assemble this update by hand again.
-
-1. In the same conversation from Exercise 2.1, send a new prompt:
+1. **Now put it on autopilot.** Schedule the same skill to run before each meeting:
 
     ```text
-    Schedule this to run weekly on Mondays at 8am
+    Every <day + time that is 15 minutes before the meeting time>, run my 1:1 Prep skill
+    for <direct report> and post the brief to my Teams.
     ```
 
-1. You will be prompted to confirm the scheduled task details:
+> [!TIP]
+> **Why 15 minutes before?** The meeting is a fixed weekly slot, so a scheduled prompt 15 minutes earlier lands your brief right on time - every week, automatically.
 
-    ![Microsoft 365 Copilot showing Cowork schedule confirmation](./assets/schedule.png)
+## Exercise 2.3 - The Recap That Writes Itself {#exercise3-recap}
 
-    - **Name**: Give the schedule a name that will help you recognize it in the future, for example "Weekly Manager Update."
-    - **Repeat**: Ensure it is set to **Weekly** at 8am (or whatever time you prefer).
-    - **Run in**: Select either **New conversation** or **Current conversation**. If you select **New conversation**, Cowork will start a fresh conversation each week. If you select **Current conversation**, it will continue the same thread each week.
+The **1:1 Recap** skill reads the meeting transcript, excludes the personal opening, splits action items into **yours vs. theirs** with due dates, captures decisions and the support you committed to, and shows you a draft to edit - sending only on your approval.
 
-    Ensure **Run once now** is selected and then select **Schedule**.
+The recap that goes to your **report** (after you approve) includes:
 
-1. Cowork will go through the same steps as before, but this time when presented with the draft, select **Always allow: Only to *your alias*@microsoft.com**
+- Key discussion points
+- Decisions
+- Action items - yours vs. theirs
+- Support you will provide
+- Focus for your next 1:1
 
-    ![Approval option to always allow sending only to your own alias](./assets/your-alias.png)
+1. **Draft it after the call:**
 
-Now every week Cowork assembles your update and sends it to your own inbox. You just skim it, tweak if needed, and forward it to your manager.
+    ```text
+    Use my 1:1 Recap skill to draft the follow-up for <day, date and time of last 1:1>
+    1:1 with <direct report>.
+    ```
+
+1. **Edit with Cowork** by just describing the change, for example:
+
+    ```text
+    Drop the last action item and add a Friday due date to the first one.
+    ```
+
+1. **Approve the send:**
+
+    ```text
+    Looks good. Send it to <direct report>.
+    ```
+
+> [!IMPORTANT]
+> **You stay in control.** Nothing reaches your report until you say send. The recap is run on-demand after the call - it is deliberately not scheduled - and the personal opening is left out automatically.
+
+## Exercise 2.4 - Scale to Your Team {#exercise4-scale}
+
+You built it for one report. Now roll it out to everyone with a single instruction - both skills already take the report's name as input, so nothing gets rewritten.
+
+1. In Cowork, paste:
+
+    ```text
+    Now do the same for the rest of my team. Set up the recurring 1:1s, the prep schedule,
+    and the recap workflow for <list your remaining team members>.
+    ```
+
+> [!TIP]
+> One report proves the pattern. One instruction rolls it out to the whole team. Before you go wide, be transparent with your team about how you're preparing for 1:1s, and let the process run for 2-4 weeks with a single report so you can tune the two skills to your voice.
 
 ## What Done Looks Like {#what-done-looks-like}
 
 A successful run looks like:
 
-- A manager-ready update drafted from your real week, in three clear sections
-- "Looking ahead" reflects your actual upcoming calendar and open tasks
-- A weekly scheduled run is set up that delivers the update to your own inbox and never sends to anyone else without approval
+- A recurring, auto-transcribed 1:1 series on your calendar
+- A prep brief that arrives in your Teams 15 minutes before each meeting
+- A recap that drafts itself from the transcript and sends only after your approval
+- A single prompt that replicates the whole setup across your team
 
 Quick debrief:
 
-- Did Cowork surface anything you'd forgotten you did this week?
-- What other recurring write-up could you hand off to a schedule?
+- Did the prep brief surface something you'd have missed going in cold?
+- How would you describe the approval experience - prep vs. recap - to a colleague?
+- Which other recurring write-up could you hand off the same way?
 
 ## Flight Complete {#flight-complete}
 
-You turned a weekly chore into a one-pass draft and put the whole thing on a schedule.
+You turned your 1:1s into a loop that preps you before and recaps for you after - then scaled it across your team from one instruction.
 
 What you saw in action:
 
-✅ **Real activity in, finished draft out**: Cowork rebuilt your week from your own Microsoft 365 work, not a file you prepared.
+✅ **Prep that beats you to the meeting**: Cowork rebuilt the context from your own Microsoft 365 activity and posted it on schedule.
 
-✅ **Scheduled, not manual**: The update now runs on its own and lands in your inbox each week, ready to forward.
+✅ **A recap with a human in the loop**: The draft assembled itself from the transcript, but nothing sent until you approved it.
 
-The draft is accurate, but it probably still reads like an assistant wrote it. On your [next flight](/make-it-your-own/) you'll teach Cowork to write in your voice by building your own custom skill.
+✅ **Build once, scale everywhere**: One report proved the pattern; one prompt rolled it out to the team.
+
+The two skills are a starting point, not a finish line. On your [next flight](/make-it-your-own/) you'll make Cowork your own - teaching it to write in your voice by building a custom skill.
