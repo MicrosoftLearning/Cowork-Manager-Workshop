@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Copilot Cowork Manager Session
+  name: Autonomous Work with Cowork & Scout
   text: Learn by doing
   tagline: Hands-on, guided exercises for delegating real work to Microsoft 365 Copilot Cowork.
   image:
@@ -22,30 +22,72 @@ hero:
 <!-- markdownlint-disable MD033 MD041 -->
 <div class="home-section">
 
-## Before you get started
+## Putting AI to work in everyday manager workflows
 
 <!-- markdownlint-disable-next-line MD033 -->
-<p class="home-section-intro">A quick thought experiment to get you in the Cowork mindset.</p>
+<p class="home-section-intro">The shift: You've used Copilot to get answers. Now it does the work.</p>
 
-<div class="question-bubble">
+### Skills for every task
 
-What if you had a colleague who never sleeps, one you could hand a task to that would dig through your files, emails, and chats, do the work, and hand it back ready for your review?
+<!-- markdownlint-disable-next-line MD033 -->
+<p class="home-section-intro">Delegate multiple steps to Cowork such as setting up an event for your team, creating your team rhythms, or setting up all the assets and communications for a project.</p>
+
+<div class="lab-grid">
+  <div class="lab-card">
+    <span class="lab-card-emoji">📄</span>
+    <span class="lab-card-title">Documents & decks</span>
+    <span class="lab-card-desc">Draft, build, and polish the files you live in — reports, models, slides, and PDFs.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">📅</span>
+    <span class="lab-card-title">Calendar & meetings</span>
+    <span class="lab-card-desc">Triage your week, schedule the right things, and walk in prepped with a briefing.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">💬</span>
+    <span class="lab-card-title">Messages that land</span>
+    <span class="lab-card-desc">Write emails and Teams posts that read the room, tuned to each audience.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">🎯</span>
+    <span class="lab-card-title">Tailored to you</span>
+    <span class="lab-card-desc">Teach Cowork your process once, then reuse it on every task.</span>
+  </div>
+</div>
+
+<div class="callout-bubble">
+<span class="callout-bubble-icon">💡</span>
+
+**The big idea:** The first three work out of the box. Skills are what make it yours.
 
 </div>
 
-What's the first thing you'd delegate? A few to get you thinking:
+### How does Cowork actually work?
 
-- The status report you rebuild every week
-- Triaging and clearing your inbox
-- Pulling meeting prep together from a dozen scattered threads
+<!-- markdownlint-disable-next-line MD033 -->
+<p class="home-section-intro">With Work IQ, Cowork takes your ideas, your work, and your collective team's progress forward into new deliverables, meetings, and communications.</p>
 
-Now imagine getting that finished work back, and how much of your week you'd get back with it. That's the shift Copilot Cowork is built for: you describe the outcome, it does the legwork across your Microsoft 365 environment, and you stay in control.
-
-<div class="callout-bubble">
-<span class="callout-bubble-icon">👋</span>
-
-**Following along at Microsoft Start?** Take a few minutes to turn to the peers at your table or beside you, make some brief introductions, and swap answers to the question above.
-
+<div class="lab-grid">
+  <div class="lab-card">
+    <span class="lab-card-emoji">1️⃣</span>
+    <span class="lab-card-title">Grounded in Work IQ</span>
+    <span class="lab-card-desc">Reasons over your emails, meetings, files, chats, and people — not fragments you point it at.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">2️⃣</span>
+    <span class="lab-card-title">Plans & proposes</span>
+    <span class="lab-card-desc">Breaks the goal into steps, asks clarifying questions, and shows progress you can steer or stop.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">3️⃣</span>
+    <span class="lab-card-title">You approve</span>
+    <span class="lab-card-desc">You approve every action before it happens — send, schedule, decline, share.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">4️⃣</span>
+    <span class="lab-card-title">Executes in Microsoft 365</span>
+    <span class="lab-card-desc">Runs in a secure cloud, then saves outputs to OneDrive — labeled and ready to share.</span>
+  </div>
 </div>
 
 </div>
@@ -59,11 +101,11 @@ Now imagine getting that finished work back, and how much of your week you'd get
   <a class="lab-card" href="/Cowork-Manager-Workshop/orientation/">
     <span class="lab-card-meta">
       <span class="lab-card-badge">Flight 01</span>
-      <span class="lab-card-time">⏱️ 15 min</span>
+      <span class="lab-card-time">⏱️ 10 min</span>
     </span>
     <span class="lab-card-emoji">✈️</span>
-    <span class="lab-card-title">Orientation Through Discovery</span>
-    <span class="lab-card-desc">Get oriented in Copilot Cowork, find your skills, and run a discovery-first dashboard workflow.</span>
+    <span class="lab-card-title">Team Meeting Prep with Cowork</span>
+    <span class="lab-card-desc">Review a scheduled meeting with agenda and invites, then build your own — find a time, draft the agenda, and capture notes automatically.</span>
     <span class="lab-card-cta">Start flight →</span>
   </a>
   <a class="lab-card" href="/Cowork-Manager-Workshop/weekly-update/">
@@ -72,21 +114,21 @@ Now imagine getting that finished work back, and how much of your week you'd get
       <span class="lab-card-time">⏱️ 10 min</span>
     </span>
     <span class="lab-card-emoji">🛠️</span>
-    <span class="lab-card-title">Your Weekly Manager Update</span>
-    <span class="lab-card-desc">Have Cowork rebuild your week into a leadership update and put it on a schedule.</span>
-    <span class="lab-card-cta">Start flight →</span>
-  </a>
-  <a class="lab-card" href="/Cowork-Manager-Workshop/make-it-your-own/">
-    <span class="lab-card-meta">
-      <span class="lab-card-badge">Flight 03</span>
-      <span class="lab-card-time">⏱️ 10 min</span>
-    </span>
-    <span class="lab-card-emoji">🚀</span>
-    <span class="lab-card-title">Make It Your Own</span>
-    <span class="lab-card-desc">Take the controls and pick your path: build your own custom skill, or hand Cowork a whole job to run.</span>
+    <span class="lab-card-title">One-on-One Prep with Cowork</span>
+    <span class="lab-card-desc">Build the automation, then scale it across your team — schedule meetings, deliver personalized prep briefs, and generate meeting recaps.</span>
     <span class="lab-card-cta">Start flight →</span>
   </a>
 </div>
+
+<a class="bonus-card" href="/Cowork-Manager-Workshop/make-it-your-own/">
+  <span class="bonus-card-emoji">🚀</span>
+  <span class="bonus-card-body">
+    <span class="bonus-card-badge">Optional · take it home</span>
+    <span class="bonus-card-title">Explore Microsoft Scout</span>
+    <span class="bonus-card-desc">Take the controls and pick your path: build your own custom skill, or hand Cowork a whole job to run.</span>
+  </span>
+  <span class="bonus-card-cta">Explore →</span>
+</a>
 
 <a class="bonus-card" href="/Cowork-Manager-Workshop/learn-cowork-with-cowork/">
   <span class="bonus-card-emoji">🎓</span>

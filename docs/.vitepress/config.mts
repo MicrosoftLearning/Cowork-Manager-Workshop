@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Copilot Cowork Manager Session",
+  title: "Autonomous Work with Cowork & Scout",
   description:
     "Hands-on flights for building real AI skills with Microsoft 365 Copilot Cowork.",
   base: "/Cowork-Manager-Workshop/",
@@ -13,13 +13,18 @@ export default defineConfig({
       {
         text: "Flights",
         items: [
-          { text: "Flight 01 · Orientation Through Discovery", link: "/orientation/" },
-          { text: "Flight 02 · Your Weekly Manager Update", link: "/weekly-update/" },
-          { text: "Flight 03 · Make It Your Own", link: "/make-it-your-own/" },
+          { text: "Flight 01 · Team Meeting Prep with Cowork", link: "/orientation/" },
+          { text: "Flight 02 · One-on-One Prep with Cowork", link: "/weekly-update/" },
         ],
       },
-      { text: "Learn Cowork with Cowork", link: "/learn-cowork-with-cowork/" },
-      { text: "Resources", link: "/resources/" },
+      {
+        text: "Resources",
+        items: [
+          { text: "Explore Microsoft Scout", link: "/make-it-your-own/" },
+          { text: "Learn Cowork with Cowork", link: "/learn-cowork-with-cowork/" },
+          { text: "More Resources", link: "/resources/" },
+        ],
+      },
     ],
     search: {
       provider: "local",
@@ -28,16 +33,16 @@ export default defineConfig({
       {
         text: "Flights",
         items: [
-          { text: "Flight 01 · Orientation Through Discovery", link: "/orientation/" },
-          { text: "Flight 02 · Your Weekly Manager Update", link: "/weekly-update/" },
-          { text: "Flight 03 · Make It Your Own", link: "/make-it-your-own/" },
+          { text: "Flight 01 · Team Meeting Prep with Cowork", link: "/orientation/" },
+          { text: "Flight 02 · One-on-One Prep with Cowork", link: "/weekly-update/" },
         ],
       },
       {
         text: "Take it with you",
         items: [
+          { text: "Explore Microsoft Scout", link: "/make-it-your-own/" },
           { text: "Learn Cowork with Cowork", link: "/learn-cowork-with-cowork/" },
-          { text: "Resources", link: "/resources/" },
+          { text: "More Resources", link: "/resources/" },
         ],
       },
     ],

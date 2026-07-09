@@ -2,7 +2,7 @@
   "name": "cowork-manager-workshop",
   "version": "1.0.0",
   "private": true,
-  "description": "Copilot Cowork Manager Session — hands-on labs.",
+  "description": "Autonomous Work with Cowork & Scout — hands-on labs.",
   "devDependencies": {
     "markdownlint-cli2": "^0.22.0",
     "vitepress": "^2.0.0-alpha.12"
