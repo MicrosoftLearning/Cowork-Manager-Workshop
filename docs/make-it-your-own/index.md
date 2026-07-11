@@ -72,34 +72,29 @@ Getting up and running takes about **5 minutes** for the core install.
 Before you tell Scout what to do, ask it what it sees:
 
 ```text
-Look at my open windows, my calendar, my last 50 emails, and my Teams
-chats from the last 24 hours. What are the 3 most impactful things you
-could do for me today that I shouldn't do manually? Rank them by hours
-saved per week and tell me exactly how each would work.
+Look across my current work context: open windows, today and next week's
+calendar, my last 50 emails, and Teams chats from the last week. Identify
+the 3 highest-leverage tasks or automations you could handle for me, where
+your help would save significantly more time than me doing it manually.
+
+For each recommendation, include:
+
+- What you would do
+- Why it matters now, based on the signals you found
+- Estimated hours saved per week
+- Exact workflow, including which apps/data sources you would use
+- What you would need from me before acting
+
+Rank the recommendations by estimated weekly time saved. Prioritize
+cross-app synthesis, follow-up drafting, calendar/email/Teams triage,
+document/deck/spreadsheet updates, and recurring workflows. Avoid generic
+productivity tips; only recommend actions grounded in my actual current
+context.
 ```
 
 > [!NOTE]
 > This calibrates Scout to your actual workflow in 90 seconds, surfaces the automations worth building first, and trains you to think in outcomes instead of tasks.
 
-## The 3 Things That Make Scout Stick {#make-it-stick}
-
-<div class="lab-grid">
-  <div class="lab-card">
-    <span class="lab-card-emoji">1️⃣</span>
-    <span class="lab-card-title">Onboarding</span>
-    <span class="lab-card-desc">Run the calibration prompt on day 1. It surfaces your top automatable workflows in 90 seconds. Turn the top result into your first automation by Friday.</span>
-  </div>
-  <div class="lab-card">
-    <span class="lab-card-emoji">2️⃣</span>
-    <span class="lab-card-title">The one-week sprint</span>
-    <span class="lab-card-desc">Do everything in Scout first for one week. It's slower on day 1 — then it becomes 10x. Without this, even good users drift back to old workflows.</span>
-  </div>
-  <div class="lab-card">
-    <span class="lab-card-emoji">3️⃣</span>
-    <span class="lab-card-title">Compounding</span>
-    <span class="lab-card-desc">Build one automation by Friday, post one win in the Community channel, and steal at least one peer skill per month. That's how hours saved compound.</span>
-  </div>
-</div>
 <!-- markdownlint-enable MD033 -->
 
 ## Learn More {#learn-more}
