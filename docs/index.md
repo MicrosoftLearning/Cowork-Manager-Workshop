@@ -111,7 +111,7 @@ hero:
   <a class="lab-card" href="/Cowork-Manager-Workshop/weekly-update/">
     <span class="lab-card-meta">
       <span class="lab-card-badge">Flight 02</span>
-      <span class="lab-card-time">⏱️ 10 min</span>
+      <span class="lab-card-time">⏱️ 20 min</span>
     </span>
     <span class="lab-card-emoji">🛠️</span>
     <span class="lab-card-title">One-on-One Prep with Cowork</span>

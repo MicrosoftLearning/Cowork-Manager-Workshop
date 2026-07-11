@@ -1,124 +1,112 @@
 ---
-description: Take the controls. Build your own custom skill with Cowork's guided builder, or pick a path that fits your work.
-time: 10
+description: Explore Microsoft Scout — your AI teammate that can drive your browser, talk to M365, and stitch your whole day together.
 outline: false
 ---
 
-# 🚀 Flight 03: Make It Your Own
+# 🚀 Explore Microsoft Scout
 
-**Cleared for solo flight.** Your first two flights walked you through the steps. This one hands you the controls.
-
-Pick one path below based on what's most useful to you. Each is self-contained and takes about 10 minutes. There's no exact prompt to copy this time - you'll brief Cowork yourself and see how far you can take it.
-
-## Choose Your Path {#choose-your-path}
-
-Select a path to expand it. You can switch back anytime.
+**Your AI teammate.** Scout is a powerful agentic desktop app, built on the Openclaw framework and secured by Microsoft. It can drive your browser, talk to M365, file your expenses, build custom dashboards, and stitch your whole day together.
 
 > [!NOTE]
-> Cowork adapts to the context it has, so it won't behave identically for everyone. Depending on what it already knows - or what permissions are already set up - it may or may not open an action window or ask a clarifying question before it runs. If your experience doesn't match the steps exactly, that's expected, not a mistake.
+> This is an internal Microsoft tool. Scout requires approval, which takes 4–24 hours after you submit your request.
+
+## What Sets Scout Apart? {#what-sets-scout-apart}
 
 <!-- markdownlint-disable MD033 -->
-<PathChooser>
-<template #pathA>
+<div class="lab-grid">
+  <div class="lab-card">
+    <span class="lab-card-emoji">🖥️</span>
+    <span class="lab-card-title">Sees your screen</span>
+    <span class="lab-card-desc">Scout can see and drive your browser — navigate portals, fill forms, and interact with web apps on your behalf.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">🔌</span>
+    <span class="lab-card-title">MCP-powered integrations</span>
+    <span class="lab-card-desc">Connect MSX, Power BI, Gmail, your car, smart home — anything with an MCP server becomes part of your workflow.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">⚡</span>
+    <span class="lab-card-title">Scheduled automations</span>
+    <span class="lab-card-desc">Turn any successful prompt into a recurring automation — Monday pipeline reviews, weekly expense drafts, daily deal dashboards.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">🧠</span>
+    <span class="lab-card-title">Deep reasoning with Work IQ</span>
+    <span class="lab-card-desc">Same engine as GitHub Copilot CLI with deep reasoning, planning, and research grounded in your M365 data.</span>
+  </div>
+</div>
 
-### Path A - Build Your Own Skill {#path-a}
+## How Scout Compares {#how-scout-compares}
 
-In your last flight, Cowork drafted your update but it read like an assistant wrote it. A **custom skill** fixes that. A skill is a small set of saved instructions Cowork loads automatically whenever a certain kind of task comes up, so you teach it once and it applies every time.
+| **Tool** | **Best for** | **Usage costs** |
+| --- | --- | --- |
+| **M365 Copilot** | Quick 30-second answers over your M365 content — summarize a meeting, rewrite an email. | M365 Copilot Add-on license |
+| **Copilot Cowork** | Multi-step M365 delegation — calendar optimization, meeting prep with deck + briefing + follow-up. | Copilot Credits |
+| **GitHub Copilot CLI** | Pure-terminal coding and deep reasoning over datasets with Work IQ. | GitHub Copilot AI Tokens |
+| **Scout** | Everything else — drives your browser, updates MSX, files expenses, builds dashboards, runs scheduled automations. | GitHub Copilot AI Tokens |
 
-You won't write any code or edit any files. Cowork has a **guided skill builder** that interviews you and assembles the skill for you.
+## Getting Started {#getting-started}
 
-#### Pick something worth teaching
+Getting up and running takes about **5 minutes** for the core install.
 
-A good first skill captures something you do on a rhythm, or want done a consistent way. Pick one:
+### What you'll need
 
-- **A recurring document** you produce often - a weekly status, a project update, meeting notes - in a consistent format.
-- **Your writing style** - your tone and structure, so drafts come back sounding like you instead of generic.
-- **A routine multi-step process** - gather from email, Teams, or calendar, then summarize or act in a set order.
+- Your **@microsoft.com** account
+- A Windows PC (x64 or ARM64) or Mac
+- Early access approval via My Access — takes a few hours
+
+### Quick install steps
+
+1. **Request access** — Go to [My Access](https://myaccess.microsoft.com) and request access into the **Scout inner ring**. It takes a few hours to process. You'll receive an email once access is granted.
+2. **Download Scout** — Go to [aka.ms/clawpilot](https://aka.ms/clawpilot) and sign in with SSO. Scroll through to find the latest release and click on the release title.
+3. **Find the installer** — Scroll to the bottom of the release notes and click the appropriate download file for your computer type (Windows x64, Windows ARM64, Mac Apple Silicon, or Mac Intel).
+4. **Install and launch** — Follow the download instructions. If launching doesn't work right away after access is granted, give it a little time to finish provisioning, then try again.
+5. **Sign in** — Settings → Sign in to Microsoft 365
+6. **Test it** — ask Scout *"What's on my calendar today?"*
 
 > [!TIP]
-> If you came from your last flight, "make my manager update sound like me" is a perfect candidate. It builds directly on the update you just automated.
+> If you get stuck at any point, join the [Scout Teams Community channel](https://teams.microsoft.com/l/channel/19%3Ay-Y5VA2ijemPnkh-GwREkEd6qEqkjMCYN8o9MlRWvjQ1%40thread.tacv2/Community?groupId=d0d20f77-d3f9-44b6-99f5-b0c9d43fa803&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&ngc=true&allowXTenantAccess=true) and ask for a 15-minute install buddy.
 
-#### Build it
+## The One Prompt Everyone Should Try First {#first-prompt}
 
-1. Open [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat/) and select **Cowork**. In the navigation pane, select **Customize**, open the **Skills** tab, and select **Add**.
+Before you tell Scout what to do, ask it what it sees:
 
-    ![Copilot Cowork Skills page with the Add button](./assets/add-skill.png)
-
-    > [!TIP]
-    > Or skip the menu and just tell Cowork what you want, starting with "I'd like to build a skill that ..."
-
-1. From here, Cowork drives. It asks what the skill should do, then follows up on the details - tone, structure, what to always or never do. Answer in plain language, be specific, and keep going until the skill it drafts captures what you want. You can refine the name, description, and instructions anytime.
-
-    ![Copilot Cowork guided skill builder showing the Skill purpose options](./assets/skill-purpose.png)
-
-#### Try it out
-
-1. Start a **new conversation** and give Cowork a task that should trigger your new skill - without mentioning the skill by name.
-
-1. Watch the side panel: your skill should load on its own. Compare the result to what you'd have gotten before you built it.
+```text
+Look at my open windows, my calendar, my last 50 emails, and my Teams
+chats from the last 24 hours. What are the 3 most impactful things you
+could do for me today that I shouldn't do manually? Rank them by hours
+saved per week and tell me exactly how each would work.
+```
 
 > [!NOTE]
-> Your skills live under **Customize** → **Skills**, and each one is saved as a `SKILL.md` file in your OneDrive (under `Documents/Cowork/skills/`). You can edit or remove this one anytime, or ask Cowork to refine it.
->
-> **Want to go further?** A skill is just a Markdown file, so you don't have to use the builder. You can write one yourself, or have another AI chatbot draft the `SKILL.md` for you, then add it from the **Skills** page with **Upload Skill**.
+> This calibrates Scout to your actual workflow in 90 seconds, surfaces the automations worth building first, and trains you to think in outcomes instead of tasks.
 
-#### Did it work? {#path-a-check}
+## The 3 Things That Make Scout Stick {#make-it-stick}
 
-Check your result against these:
-
-- ✅ The skill saved and appears under **Customize** → **Skills**
-- ✅ It loaded on its own when you gave a relevant task, without naming it
-- ✅ The output reflects the instructions you gave - tone, structure, or steps
-
-</template>
-<template #pathB>
-
-### Path B - Delegate the Whole Thing {#path-b}
-
-Most of the time we ask an assistant for one thing: a draft, a summary, a slide. Cowork is built for more than that. Hand it an *outcome* and it chains the steps for you - reading, analyzing, building, and drafting - then hands back a bundle of finished work in one pass.
-
-This path is about that shift: stop asking for a deliverable, start handing off the whole job.
-
-#### Pick a job to hand off
-
-Think about something you'd normally break into several separate prompts (or do by hand). Pick one of these, or bring your own:
-
-- **Prep me for my week** - review my calendar and open threads, build a short briefing for each key meeting, and draft any follow-ups I still owe from last week.
-- **Turn this project into a package** - from a tracker or thread, build a status dashboard, write an exec summary email, and draft a team update.
-- **Catch me up and tee up action** - summarize a long thread or document, pull out the decisions and open questions, and create a task list grouped by owner.
-- **Pick your own** - take something you do regularly and ask for the whole outcome, not just the first piece.
-
-> [!TIP]
-> The magic word is *and*. Each example asks for several things at once - that's what tells Cowork to work end to end instead of stopping at the first deliverable.
-
-#### Hand it off
-
-1. Open [Microsoft 365 Copilot](https://m365.cloud.microsoft/chat/), select **Cowork**, and start a **New task**.
-
-1. Give Cowork the context it needs. Use **+** → **Add work context** to point it at the relevant emails, Teams threads, meetings, or files, or attach a file directly. You can also paste in links to documents, SharePoint pages, OneDrive files, websites - whatever Cowork needs to see to do the work.
-
-1. Brief it on the **whole outcome** in one prompt - what to review, what to produce, and how many pieces you want back. Don't split it into separate asks.
-
-1. Watch it work. Cowork plans the steps, loads the skills it needs, and produces each piece. Approve any actions it checks in on, and review what it hands back.
-
-#### Did it work? {#path-b-check}
-
-Check your result against these:
-
-- ✅ One task produced **more than one** finished piece
-- ✅ Cowork chained several steps - reading, analyzing, building, drafting
-- ✅ It would have taken you multiple separate prompts, or a lot of manual work, to get the same bundle
-
-</template>
-</PathChooser>
+<div class="lab-grid">
+  <div class="lab-card">
+    <span class="lab-card-emoji">1️⃣</span>
+    <span class="lab-card-title">Onboarding</span>
+    <span class="lab-card-desc">Run the calibration prompt on day 1. It surfaces your top automatable workflows in 90 seconds. Turn the top result into your first automation by Friday.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">2️⃣</span>
+    <span class="lab-card-title">The one-week sprint</span>
+    <span class="lab-card-desc">Do everything in Scout first for one week. It's slower on day 1 — then it becomes 10x. Without this, even good users drift back to old workflows.</span>
+  </div>
+  <div class="lab-card">
+    <span class="lab-card-emoji">3️⃣</span>
+    <span class="lab-card-title">Compounding</span>
+    <span class="lab-card-desc">Build one automation by Friday, post one win in the Community channel, and steal at least one peer skill per month. That's how hours saved compound.</span>
+  </div>
+</div>
 <!-- markdownlint-enable MD033 -->
 
-## Flight Complete {#flight-complete}
+## Learn More {#learn-more}
 
-You took the controls and put Cowork to work on your own terms, without a script to follow.
-
-What you saw in action:
-
-✅ **Skills are yours to shape**: The guided builder turns a short back-and-forth into a reusable skill - no files or code required.
-
-✅ **One brief, a bundle back**: Hand Cowork a whole outcome and it chains the steps, instead of stopping at a single deliverable.
+- 📄 [Overview of Microsoft Scout](https://learn.microsoft.com/en-us/microsoft-scout/overview)
+- 🚀 [Get started with Microsoft Scout](https://learn.microsoft.com/en-us/microsoft-scout/get-started)
+- 📘 [Use Microsoft Scout](https://learn.microsoft.com/en-us/microsoft-scout/use-microsoft-scout)
+- ❓ [Microsoft Scout common questions](https://learn.microsoft.com/en-us/microsoft-scout/faq)
+- 🛠️ [Skill Shack](https://eliotsdu.com/skill-shack/#library) — Community skills library for Scout and Cowork
+- 🔗 [Scout Install Guide - MCAPS](https://microsoft.sharepoint-df.com/:w:/t/ProjectLobster-Community/cQpXSdbAFlNMRavYL7hdgdkqEgUCAwNhWX8YsaN6t-yTDwRfOQ) — Full install guide with instructions on connecting to MSX
