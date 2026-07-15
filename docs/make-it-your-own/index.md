@@ -105,3 +105,4 @@ context.
 - ❓ [Microsoft Scout common questions](https://learn.microsoft.com/en-us/microsoft-scout/faq)
 - 🛠️ [Skill Shack](https://eliotsdu.com/skill-shack/#library) — Community skills library for Scout and Cowork
 - 🔗 [Scout Install Guide - MCAPS](https://microsoft.sharepoint-df.com/:w:/t/ProjectLobster-Community/cQpXSdbAFlNMRavYL7hdgdkqEgUCAwNhWX8YsaN6t-yTDwRfOQ) — Full install guide with instructions on connecting to MSX
+- 🐛 [Bugs and Issues](https://teams.microsoft.com/l/channel/19%3A6JssZ_-_CajVAxc5BvJ_m20B0btpJ2OOJOyDRLUjiFU1%40thread.tacv2/Bugs%20and%20Issues?groupId=d0d20f77-d3f9-44b6-99f5-b0c9d43fa803&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47) — Join the Scout Bugs and Issues Teams channel
